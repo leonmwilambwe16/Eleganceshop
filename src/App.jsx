@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Contact from './Component/Contact.jsx'
 import Navbar from './Component/Navbar.jsx'
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <CartProvider>
-    <BrowserRouter>
+     <HashRouter>
     <Navbar/>
     <Routes>
     <Route path='/' element={<Home/>}/>
@@ -33,8 +33,10 @@ function App() {
     <Route path='/cartpage' element={<CartPage/>}/>
     </Routes>
     <Contact/>
-    </BrowserRouter>
-    </CartProvider>
+    </HashRouter>
+    </CartProvider> 
+
+  
  
     
   )
