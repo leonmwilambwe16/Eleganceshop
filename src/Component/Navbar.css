@@ -1,0 +1,106 @@
+.nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  padding: 17px 20px;
+  position: relative;
+  background: black;
+  color: white;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+}
+.first-logo {
+  font-size: 30px;
+  color: red;
+}
+.minititle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menue-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.cart-user {
+  display: flex;
+  gap: 7px;
+}
+
+.count-text {
+  top: 1.5rem;
+  bottom: 0;
+  left: 115.8rem;
+  position: absolute;
+  background: red;
+  width: 19px;
+  height: 23px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.humberger-bar {
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-link:hover {
+  color: red;
+  transition: 0.5s;
+  box-shadow: 10px 3px 23px 2px rgba(222, 220, 220, 0.75);
+  -webkit-box-shadow: 10px 3px 23px 2px rgba(222, 220, 220, 0.75);
+  -moz-box-shadow: 10px 3px 23px 2px rgba(222, 220, 220, 0.75);
+}
+
+@media (max-width: 768px) {
+  .humberger-bar {
+    display: block;
+    cursor: pointer;
+  }
+  .menue-list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 68%;
+    height: 100vh;
+    background-color: white;
+    padding: 40px 20px;
+    transition: right 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  .menue-list.active {
+    right: 0;
+    background: rgba(0, 0, 0, 0.651);
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  .count-text {
+    top: 1.5rem;
+    bottom: 0;
+    left: 19.5rem;
+    position: absolute;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+  }
+}

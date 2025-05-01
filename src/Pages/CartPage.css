@@ -1,0 +1,51 @@
+.cart-nav img {
+  width: 100px;
+}
+.quantity {
+  display: flex;
+  gap: 20px;
+}
+.quantity .minus-btn {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.quantity .plus-btn {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.quantity .minus-btn:hover {
+  background: black;
+  transition: 0.5s;
+}
+.quantity .plus-btn:hover {
+  background: black;
+  transition: 0.5s;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 60vh;
+}
+.cart-container .checkout-btn {
+  width: 170px;
+  height: 40px;
+  background: black;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.cart-container .checkout-btn:hover {
+  background: red;
+  transition: 0.5s;
+}
+.trash-btn {
+  cursor: pointer;
+}
